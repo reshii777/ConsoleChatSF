@@ -1,13 +1,13 @@
 #include "message.h"
 
-// Реализация конструктора класса Message
+// Р РµР°Р»РёР·Р°С†РёСЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° РєР»Р°СЃСЃР° Message
 Message::Message(const std::string& text, const std::string& sender, const std::string& recipient)
     : text_(text), sender_(sender), recipient_(recipient)
 {
     timestamp = std::time(nullptr);
 }
 
-// Реализация геттеров для класса Message
+// Р РµР°Р»РёР·Р°С†РёСЏ РіРµС‚С‚РµСЂРѕРІ РґР»СЏ РєР»Р°СЃСЃР° Message
 const std::string& Message::getText() const {
     return text_;
 }
@@ -27,4 +27,3 @@ std::string Message::getTime() const {
     ss << std::put_time(&timeinfo, "%Y-%m-%d %H:%M:%S");
     return ss.str();
 }
-
