@@ -6,19 +6,19 @@
 #include <iomanip>
 
 
-// Класс сообщение
+// РљР»Р°СЃСЃ СЃРѕРѕР±С‰РµРЅРёРµ
 class Message {
 public:
 
-    // Конструктор класса, принимающий текст сообщения, отправителя и получателя
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР°, РїСЂРёРЅРёРјР°СЋС‰РёР№ С‚РµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ, РѕС‚РїСЂР°РІРёС‚РµР»СЏ Рё РїРѕР»СѓС‡Р°С‚РµР»СЏ
     Message(const std::string& text, const std::string& sender, const std::string& recipient);
 
-    // Деструктор класса
+    // Р”РµСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР°
     ~Message() {
     
     }
 
-    // Геттеры для получения текста, отправителя и получателя сообщения
+    // Р“РµС‚С‚РµСЂС‹ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ С‚РµРєСЃС‚Р°, РѕС‚РїСЂР°РІРёС‚РµР»СЏ Рё РїРѕР»СѓС‡Р°С‚РµР»СЏ СЃРѕРѕР±С‰РµРЅРёСЏ
     const std::string& getText() const;
     const std::string& getSender() const;
     const std::string& getRecipient() const;
@@ -26,8 +26,8 @@ public:
     std::string getTime() const;
 
 private:
-    std::string text_;       // Текст сообщения
-    std::string sender_;     // Отправитель
-    std::string recipient_;  // Получатель
-    time_t timestamp; // новый член-данные
+    std::string text_;       // РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
+    std::string sender_;     // РћС‚РїСЂР°РІРёС‚РµР»СЊ
+    std::string recipient_;  // РџРѕР»СѓС‡Р°С‚РµР»СЊ
+    time_t timestamp; // РЅРѕРІС‹Р№ С‡Р»РµРЅ-РґР°РЅРЅС‹Рµ
 };
