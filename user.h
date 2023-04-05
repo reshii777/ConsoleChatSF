@@ -4,18 +4,18 @@
 #include <vector>
 #include "message.h"
 
-// Класс пользователь
+// РљР»Р°СЃСЃ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ
 class User {
 public:
-    // Конструктор класса
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР°
     User(const std::string& login, const std::string& password, const std::string& name);
 
-    // Деструктор класса
+    // Р”РµСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР°
     ~User() {
     
     }
 
-    // Методы получения данных пользователя
+    // РњРµС‚РѕРґС‹ РїРѕР»СѓС‡РµРЅРёСЏ РґР°РЅРЅС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
     const std::string& getLogin() const;
     const std::string& getPassword() const;
     const std::string& getName() const;
@@ -26,9 +26,9 @@ public:
     const std::vector<Message>& getReceivedMessages() const;
 
 private:
-    std::string login_;     // Логин пользователя
-    std::string password_;  // Пароль пользователя
-    std::string name_;      // Имя пользователя
+    std::string login_;     // Р›РѕРіРёРЅ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+    std::string password_;  // РџР°СЂРѕР»СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+    std::string name_;      // РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
     std::vector<Message> sentMessages;      //
     std::vector<Message> receivedMessages;  //
 };
