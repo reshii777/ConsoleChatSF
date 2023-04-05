@@ -7,7 +7,7 @@
 #include "user.h"
 #include "message.h"
 
-// Класс 
+// РљР»Р°СЃСЃ 
 class Chat {
 public:
     Chat() {
@@ -18,9 +18,9 @@ public:
         std::cout << "Chat destroyed" << std::endl;
     }
 
-    void loginUser(); // метод для входа пользователя в чат
-    void registerUser(); // метод для регистрации нового пользователя
-    void sendMessage(const User& sender, const std::string& recipient, const std::string& text); // метод для отправки сообщения
+    void loginUser(); // РјРµС‚РѕРґ РґР»СЏ РІС…РѕРґР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РІ С‡Р°С‚
+    void registerUser(); // РјРµС‚РѕРґ РґР»СЏ СЂРµРіРёСЃС‚СЂР°С†РёРё РЅРѕРІРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+    void sendMessage(const User& sender, const std::string& recipient, const std::string& text); // РјРµС‚РѕРґ РґР»СЏ РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ
     void sendUserMessage(const User& sender);
     void readMessages();
     void viewUsers();
@@ -28,6 +28,6 @@ public:
     bool getUserInput(std::string& recipient, std::string& text) const;
 
 private:
-    std::vector<User> userList; // список пользователей чата
-    std::vector<Message> messageList; // список сообщений чата
+    std::vector<User> userList; // СЃРїРёСЃРѕРє РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ С‡Р°С‚Р°
+    std::vector<Message> messageList; // СЃРїРёСЃРѕРє СЃРѕРѕР±С‰РµРЅРёР№ С‡Р°С‚Р°
 };
